@@ -1,0 +1,251 @@
+:root{
+    /* kleuren */
+    --eerste-kleur: rgb(69, 120, 155);
+    --tweede-kleur: rgb(54, 63, 70);
+    --derde-kleur: rgb(44, 48, 51);
+    --vierde-kleur: rgb(55, 140, 197);
+    --teskt-kleur: rgb(255, 255, 255);
+    /* font groottes*/
+    --titel: 30pt;
+    --tussentitel: 16pt;
+    --basistekst: 10pt;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: var(--eerste-kleur);
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+    
+}
+
+nav i{
+    font-size: 25pt;
+    padding-right: 0.5em;
+}
+
+.jumbo{
+    background-color: var(--eerste-kleur) ;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-size: var(--titel);
+    padding-bottom: 1em;
+    font-style: inherit;
+    color: white;
+}
+
+.Matteo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: -20px;
+    
+}
+
+.lange-O{
+    height: 33px;
+    width: 90vw;
+    display: flex;
+}
+
+.O{
+    position: relative;
+    top: 8px;
+    overflow: hidden;
+}
+
+.De-Pooter{
+    display: flex;
+    gap: 3px;
+    position: relative;
+}
+
+.lange-D{
+    height: 55px;
+    width: 50vw;
+    overflow: hidden;
+    
+}
+
+.D{
+    position: relative;
+    top: 5px;
+}
+
+.about-me{
+    font-family: 'Oswald', serif;
+    font-size: var(--basistekst);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(54, 63, 70);
+    color: var(--teskt-kleur);
+    gap: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.ik{
+    height: 10em;
+    border-radius: 100%;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Oswald', serif;
+    font-size: var(--tussentitel);
+    color: var(--teskt-kleur);
+    background-color: var(--derde-kleur);
+    gap: 2em;
+    padding-top: 3em;
+    padding-bottom: 6em;
+}
+
+.skills h2{
+    padding-bottom: 2em;
+}
+
+.blokken-skills{
+    font-family: 'Oswald', serif;
+    font-size: var(--basistekst);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 1em;
+}
+
+.kolom1{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.kolom2{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blokken-skills div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vierde-kleur);
+    width: 8em;
+    height: 2em;
+    border-radius: 15px;
+}
+
+.get-in-touch{
+    height: 20em;
+    font-family: 'Oswald', serif;
+    font-size: var(--tussentitel);
+    color: var(--teskt-kleur);
+    background-color: var(--tweede-kleur);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    padding-top: 3em;
+    
+}
+
+.blokken-touch{
+    font-family: 'Oswald', serif;
+    font-size: var(--basistekst);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+   
+}
+
+.blokken-touch div{
+    background-color: var(--vierde-kleur);
+    width: 15em;
+    height: 2em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Write{
+    background-color: var(--vierde-kleur);
+    width: 15em;
+    height: 7em;
+    border-radius: 15px;
+    font-family: 'Oswald', serif;
+    font-size: var(--basistekst);
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+footer{
+    background-color: var(--derde-kleur);
+    color: var(--teskt-kleur);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+footer h2{
+    font-family: 'Oswald', serif;
+    font-size: var(--tussentitel);
+}
+
+.mail{
+    display: flex;
+    gap: 1em;
+}
+
+.mail p{
+    font-family: 'Oswald', serif;
+    font-size: var(--basistekst);
+}
+
+.nummer{
+    display: flex;
+    gap: 1em;
+}
+
+.nummer p{
+    font-family: 'Oswald', serif;
+    font-size: var(--basistekst);
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}

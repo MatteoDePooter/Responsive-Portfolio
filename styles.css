@@ -17,19 +17,46 @@
     margin: 0;
 }
 
-nav{
-    background-color: var(--eerste-kleur);
+.menu-container {
+    width: 100%;
+    position: fixed;
     display: flex;
-    flex-direction: row-reverse;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    
+    justify-content: flex-end;
+    width: auto;
+    z-index: 10;
+    top: 0;
+    right: 0;
+}
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
     
 }
-
-nav i{
-    font-size: 25pt;
-    padding-right: 0.5em;
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    top: 40px;
+    right: 0;
+    
+}
+.menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    
+}
+.menu a:hover {
+    background-color: #555;
+}
+.show {
+    display: block;
+    
 }
 
 .jumbo{
@@ -49,6 +76,7 @@ nav i{
     gap: 5px;
     position: relative;
     top: -20px;
+    padding-top: 1em;
     
 }
 
@@ -88,6 +116,7 @@ nav i{
     display: flex;
     text-align: center;
     justify-content: space-between;
+    padding: 1em;
     align-items: center;
     background-color: rgb(54, 63, 70);
     color: var(--teskt-kleur);
@@ -219,6 +248,11 @@ footer{
     gap: 2em;
 }
 
+.contact i{
+    position: relative;
+    top: 2px;
+}
+
 footer h2{
     font-family: 'Oswald', serif;
     font-size: var(--tussentitel);
@@ -248,4 +282,187 @@ footer h2{
     display: flex;
     flex-direction: row;
     gap: 5em;
+    font-size: var(--tussentitel);
+}
+
+@media screen and (min-width: 744px){
+
+    nav{
+        padding-top: 0.75em;
+        padding-bottom: 0.75em;
+    }
+
+    nav i{
+        font-size: 30pt;
+    }
+
+    .jumbo{
+        padding-bottom: 1.5em;
+        font-size: 40pt;
+    
+    }
+
+    .lange-O{
+        height: 50px;
+    }
+
+    .lange-D{
+        height: 65px;
+    }
+
+    .D{
+        display: flex;
+        align-items: center;
+    }
+
+    .about-me{
+        height: 12em;
+        font-size: 17pt;
+        padding-bottom: 3em;
+        padding-top: 3em;
+    }
+
+    .skills{
+        padding-bottom: 8em;
+    }
+
+    .skills h2{
+        font-size: 25pt;
+        padding-bottom: 4em;
+    }
+
+    .skills div{
+        font-size: 17pt;
+    }
+
+    .get-in-touch{
+        height: auto;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .get-in-touch h2{
+        font-size: 25pt;
+    }
+
+    .get-in-touch div{
+        font-size: 17pt;
+    }
+
+    footer{
+        font-size: 17pt;
+    }
+
+    footer h2{
+        font-size: 25pt;
+    }
+
+    .contact i{
+        position: relative;
+        top: 7px;
+    }
+
+    .woonplaats p{
+        font-size: 17pt;
+    }
+
+    .mail p{
+        font-size: 17pt;
+    }
+
+    .nummer p{
+        font-size: 17pt;
+    }
+
+    .social{
+        font-size: 25pt;
+    }
+}
+
+@media(min-width: 1440px){
+
+    nav {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    nav i {
+        font-size: 35pt;
+    }
+
+    .jumbo {
+        padding-bottom: 2em;
+        font-size: 50pt;
+    }
+
+    .lange-O {
+        height: 60px;
+    }
+
+    .lange-D {
+        height: 80px;
+    }
+
+    .about-me {
+        font-size: 20pt;
+        padding: 5em 15%;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        gap: 5em;
+    }
+
+    .ik {
+        height: 15em;
+    }
+
+    .skills {
+        padding-bottom: 10em;
+    }
+
+    .skills h2 {
+        font-size: 30pt;
+        padding-bottom: 5em;
+    }
+
+    .skills div {
+        font-size: 20pt;
+    }
+
+    .get-in-touch {
+        padding: 5em;
+    }
+
+    .get-in-touch h2 {
+        font-size: 30pt;
+    }
+
+    .get-in-touch div {
+        font-size: 20pt;
+    }
+
+    footer {
+        font-size: 20pt;
+        padding: 5em;
+    }
+
+    footer h2 {
+        font-size: 30pt;
+    }
+
+    .contact {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .mail p, .nummer p {
+        font-size: 20pt;
+    }
+
+    .social {
+        font-size: 30pt;
+        gap: 7em;
+    }
+
 }

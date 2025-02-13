@@ -4,36 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website - Matteo De Pooter</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Aangepast pad -->
+    <link rel="stylesheet" href="/Script/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ded0589545.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <nav>
-        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-    </nav>
-    <section class="jumbo">
+<div class="menu-container">
+    <i class="fa-solid fa-bars menu-icon" onclick="toggleMenu()" style="color: #ffffff;"></i>
+    <div class="menu" id="dropdownMenu">
+        <a href="#jumbo">Home</a>
+        <a href="#about-me">Ik</a>
+        <a href="#skills">Skills</a>
+        <a href="#social">Socials</a>
+    </div>
+</div>
+<script>
+    function toggleMenu() {
+        document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+    
+    window.onclick = function(event) {
+        if (!event.target.matches('.menu-icon')) {
+            var dropdowns = document.getElementsByClassName("menu");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+    <section class="jumbo" id="jumbo">
         <div class="Matteo">
             <h1>Matte</h1>
             <div class="O">
-                <img class="lange-O" src="Lange O.png" alt="Lange O">   
+                <img class="lange-O" sizes="(max-width: 1920px) 100vw, 1920px"
+                srcset="
+                ../Img/Lange_O_nlnzi3_c_scale,w_730.png 730w,
+                ../Img/Lange_O_nlnzi3_c_scale,w_1920.png 1920w"
+                src="../Img/Lange_O_nlnzi3_c_scale,w_1920.png"
+                alt="">
             </div>          
         </div>
         <div class="De-Pooter">
             <div class="D">
-                <img class="lange-D" src="Lange D.png" alt="Lange D"> 
+                <img class="lange-D"
+                sizes="(max-width: 1920px) 100vw, 1920px"
+                srcset="
+                ../Img/Lange_D_athewy_c_scale,w_730.png 730w,
+                ../Img/Lange_D_athewy_c_scale,w_1920.png 1920w"
+                src="../Img/Lange_D_athewy_c_scale,w_1920.png"
+                alt="Lange D"> 
             </div>
             <h1 >e Pooter</h1>
         </div>
     </section>
-    <section class="about-me">
-        <img class="ik" src="Ik.jpg" alt="Foto van mij">
+    <section class="about-me" id="about-me">
+        <img class="ik"
+        sizes="(max-width: 2000px) 100vw, 2000px"
+        srcset="
+        ../Img/Ik_ejxxtj_c_scale,w_730.jpg 730w,
+        ../Img/Ik_ejxxtj_c_scale,w_1452.jpg 1452w,
+        ../Img/Ik_ejxxtj_c_scale,w_2000.jpg 2000w"
+        src="../Img/Ik_ejxxtj_c_scale,w_2000.jpg"
+        alt="Foto van mezelf">
         <p>Hoi, ik ben Matteo De Pooter, een gepassioneerde grafisch ontwerper. Ik ben altijd op zoek naar creatieve en slimme oplossingen voor complexe uitdagingen. Ik streef naar projecten tot leven te brengen die zowel impact maken als esthetisch aantrekkelijk zijn.Als ik niet werk, vind je me waarschijnlijk in de fitness. Laten we samenwerken om iets bijzonders te creëren!</p>
     </section>    
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2>Skills</h2>
         <div class="blokken-skills">
             <div class="kolom1">
@@ -68,7 +110,7 @@
                     <p>0491 59 11 26</p>
                 </div>
             </div>
-        <div class="social">
+        <div class="social" id="social">
             <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
             <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
             <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>

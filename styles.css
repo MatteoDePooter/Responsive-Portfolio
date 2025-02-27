@@ -286,6 +286,58 @@ footer h2{
     font-size: var(--tussentitel);
 }
 
+/* Ai generated start*/
+.blokken-touch input,
+.Write textarea {
+    background-color: var(--vierde-kleur);
+    width: 15em;
+    height: 2em;
+    border-radius: 15px;
+    font-family: 'Oswald', serif;
+    font-size: var(--basistekst);
+    color: var(--teskt-kleur);
+    border: none;
+    padding: 0.5em;
+    text-align: center;
+    outline: none;
+
+}
+
+.Write textarea {
+    height: 7em;
+    resize: none;
+    
+}
+
+.blokken-touch input::placeholder,
+.Write textarea::placeholder {
+    color: var(--teskt-kleur);
+    opacity: 1; /* Zorgt ervoor dat de placeholder-tekst volledig zichtbaar is */
+}
+
+.blokken-touch input:focus::placeholder,
+.Write textarea:focus::placeholder {
+    opacity: 0; /* Maakt de placeholder-tekst onzichtbaar wanneer het veld in focus is */
+}
+
+/* Ai generated end */
+
+.Send{
+    background-color: var(--vierde-kleur);
+    border: 0;
+    color: white;
+    width: 3em;
+    border-radius: 15pt;
+}
+
+form{
+    display : flex;
+    flex-direction: column  ;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
 @media screen and (min-width: 744px){
 
     nav{

@@ -178,7 +178,8 @@
     align-items: center;
     background-color: var(--vierde-kleur);
     width: 8em;
-    height: 2em;
+    height: 1em;
+    padding: 1em;
     border-radius: 15px;
 }
 

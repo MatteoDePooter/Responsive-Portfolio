@@ -282,7 +282,7 @@ footer h2{
 .social{
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    gap: 2em;
     font-size: var(--tussentitel);
 }
 
